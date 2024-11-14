@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Page</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <input type="checkbox" id="hamburger-checkbox">
+            <div class="menu">
+                <ul>
+                  <li><img src="../Assets/wppusher-logo copy.png" alt="Logo"></li>
+                  <li class="hamburger-li">Download</li>
+                  <li class="hamburger-li">Learn more</li>
+                  <li class="hamburger-li">Pricing</li>
+                  <li class="hamburger-li">Help</li>
+                  <li class="hamburger-li">Account</li>
+                </ul>
+            </div>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <div class="container">
+            <div class="flex1">
+              <form>
+                <h2>Checkout</h2>
+                <hr>
+                <p class="paragraph1">Your Basic Information</p>
+                <div class="flex1-child">
+                  <label>First Name<br><input type="text" placeholder="Jane"></label>
+                  <label>Last Name<br><input type="text" placeholder="Doe"></label>
+                  <label>E-mail<br><input type="email" placeholder="janedoe@example.com"></label>
+                </div>
+                <hr>
+                <p class="paragraph2">Your Payment Information</p>
+                <div class="flex1-child">
+                  <label class="last-label">Credit Card<br>
+                    <input type="number" placeholder="Card Number">
+                    <input type="number" placeholder="MM/YY">
+                    <input type="number" placeholder="CVC">
+                  </label>
+                </div>
+                <hr>
+                <input type="button" value="Buy WP Pusher" class="button">
+                <p class="paragraph3">
+                  <span>Need any help?</span> Don’t hesitate to contact support!
+                </p>
+                <p class="paragraph4">
+                  Powered by <span class="span1">Stripe</span>
+                </p>
+              </form>
+            </div>
+            <div class="flex2">
+              <p class="flex2-paragraph"><span>Freelancer</span></p>
+              <p class="flex2-paragraph">
+                <span class="span4">$</span><span class="span3">99</span>/year
+              </p>
+              <p class="flex2-paragraph">
+                Automatically renews<br>after 1 year
+              </p>
+              <label class="circle-checkbox"><input type="checkbox" checked>Use on 5 client sites</label>
+              <label class="circle-checkbox"><input type="checkbox" checked>Private repositories</label>
+              <label class="circle-checkbox"><input type="checkbox" checked>Email support</label>
+              <p class="flex2-paragraph">
+                Need <span>20</span> client sites?<br><a href="#">Switch to the agency plan</a>.
+              </p>
+              <hr>
+              <p class="flex2-paragraph">
+                <em>FTP is horrible to deal with. <span>WP Pusher</span> solves that issue, and the customer support is awesome!</em>
+              </p>
+              <img src="../Assets/IMG-20240817-WA0002.jpg" class="img2" alt="Kirk Beard">
+              <span class="span5">Kirk Beard</span>
+            </div>
+          </div>
+        </main>
+        <footer>
+            © 2018 WP Pusher IVS . <a href="#">Terms of Service</a>
+        </footer>
+    </body>
+
+    <style>
+    /* General body styles */
+    body {
+        background-color: rgb(245, 248, 250);
+        font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Header and navigation */
+    header {
+        padding: 10px;
+        background-color: #f4f4f4;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hamburger {
+        display: inline-block;
+        width: 30px;
+        height: 3px;
+        background-color: rgb(3, 77, 80);
+        margin: 5px;
+    }
+    .menu ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+    }
+    ul li {
+        font-size: 13px;
+    }
+
+    /* Container layout */
+    .container {
+        display: flex;
+        width: 90%;
+        margin: 25px auto;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .flex1 {
+        width: 60%;
+        padding: 20px;
+    }
+
+    .flex2 {
+        width: 40%;
+        background-color: rgb(17, 121, 191);
+        color: white;
+        padding: 20px;
+        border-radius: 0 5px 5px 0;
+    }
+
+    /* Form styling */
+    form h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    form hr {
+        border: none;
+        height: 1px;
+        background-color: #ccc;
+        margin: 10px 0;
+    }
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        box-sizing: border-box;
+    }
+    .button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Footer styling */
+    footer {
+        text-align: center;
+        padding: 15px;
+        background-color: #333;
+        color: white;
+    }
+
+    footer a {
+        color: rgb(17, 121, 191);
+        text-decoration: none;
+    }
+
+    </style>
+</html>
